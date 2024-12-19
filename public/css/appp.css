@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(187, 164, 221);
+    font-family: monospace;
+}
+img{
+    width: 4%;
+}
+#hometitle{
+  color: #260b44;
+  position: relative;
+  left: 100px;
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+#app{
+  padding-top: 50px;
+}
+/* Tema Anahtarı (Toggle) Stilleri */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6f54bf;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #6f54bf;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Dark Mode CSS */
+body.dark-mode {
+  background-color: #260b44;
+  color: white;
+}
+body.dark-mode .container {
+  background-color: #260b44;
+  color: white;
+}
+body.dark-mode .post {
+  background-color: #260b44;
+  color: white;
+}
+body.dark-mode .card {
+  background-color: #260b44;
+  color: white;
+  border: #ccc 1px solid;
+}
+body.dark-mode .link{
+  background-color: #260b44;
+  color: white;
+}
+body.dark-mode #hometitle{
+  background-color: #260b44;
+  color: white;
+}
+body.dark-mode #app{
+  background-color: #260b44;
+  color: white;
+}
+
